@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0699fc;
+}
+
+.container {
+    width: 400px;
+    padding: 0 20px;
+    border-radius: 5px;
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.row-1 {
+    min-width: 400px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+}
+
+.row-1 .col-1 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+}
+
+.row-1 .col-1 img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.row-1 .col-1 .file {
+    display: none;
+}
+
+.row-1 .col-1 label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background: #0699fc;
+    padding: 5px 0 5px 8px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.clos {
+    font-size: 25px;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+}
+
+.select {
+    z-index: 1!important;
+}
+
+.row-1 .col-2 {
+    width: 200px;
+}
+
+.row-1 .col-2 input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+.row-1 .col-3 {
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-1 .col-3 .icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.row-2 {
+    width: 400px;
+    min-height: 400px;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.row-2 .col1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.row-2 .col1 .user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.row-2 .user-img input {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.row-2 .col2 {
+    width: 100%;
+}
+
+.row-2 .col2 #desc {
+    width: 100%;
+    line-break: auto;
+    font-size: 15px;
+}
+
+.row-2 .col3 {
+    width: 400px;
+    cursor: pointer;
+}
+
+.row-2 .col3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.row-2 .col4 {
+    width: 100%;
+}
+
+.row-2 .col4 .liks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.liks .like {
+    min-width: 100px;
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.like .icon {
+    width: 20px;
+    height: 20px;
+}
