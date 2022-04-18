@@ -7,11 +7,11 @@ const file = document.getElementById('file-input');
 const nameinput = document.getElementById('name');
 var myname = document.getElementsByClassName('myname');
 
-// window.addEventListener('load', () => {
-//     setTimeout(() => {
-//         inputs.style.top = '50%';
-//     }, 2000)
-// });
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        inputs.style.top = '50%';
+    }, 2000)
+});
 
 clos.addEventListener('click', () => {
     inputs.style.top = '-200px';
