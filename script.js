@@ -1,16 +1,34 @@
 const row1 = document.querySelector('.row-1');
-const col = row1.querySelector('.col-1');
+const inputs = document.getElementById('inputs');
 const userimg = row1.querySelector('img');
-const lable = row1.querySelector('label')
+const myimg = document.getElementById('userimg');
 const clos = row1.querySelector('.clos');
-const imgicon = row1.querySelector('.img-icon');
 const file = document.getElementById('file-input');
+const nameinput = document.getElementById('name');
+var myname = document.getElementById('myname');
+console.log(myname);
 
-userimg.addEventListener('click', () => {
-    lable.classList.add('select');
-    document.getElementById('file-input').type = 'file';
-});
+// window.addEventListener('load', () => {
+//     setTimeout(() => {
+//         inputs.style.top = '50%';
+//     }, 2000)
+// });
+
 clos.addEventListener('click', () => {
-    lable.classList.remove('select');
-    document.getElementById('file-input').type = '';
+    inputs.style.top = '-200px';
 });
+userimg.onclick = () => {
+    inputs.style.top = '50%';
+}
+
+
+function username() {
+    myname.innerHTML = nameinput.value;
+}
+
+file.addEventListener('change', (event) => {
+    var newimg = URL.createObjectURL(event.target.files[0])
+    userimg.src = newimg;
+    myimg.src = userimg.src;
+    inputs.style.top = '-200px';
+})

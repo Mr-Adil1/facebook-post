@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #0699fc;
+    overflow-x: hidden;
 }
 
 .container {
@@ -27,6 +28,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    overflow: hidden;
 }
 
 .row-1 {
@@ -60,19 +62,48 @@ body {
     display: none;
 }
 
-.row-1 .col-1 label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
+.row-1 .inputs {
+    width: 300px;
+    height: 130px;
+    padding: 0 10px 10px 10px;
     background: #0699fc;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.row-1 .inputs label {
+    width: 100%;
+    color: #0699fc;
+    background: #fff;
     padding: 5px 0 5px 8px;
-    z-index: -1;
     cursor: pointer;
+}
+
+.row-1 .inputs input[type='text'] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 0 5px 8px;
+    color: #0699fc;
+}
+
+.row-1 .inputs input[type='button'] {
+    background: #0699fc;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    padding: 2px 0;
 }
 
 .clos {
@@ -80,7 +111,9 @@ body {
     width: 50px;
     height: 30px;
     position: absolute;
-    right: 0;
+    top: 10px;
+    right: 10px;
+    color: #fff;
 }
 
 .select {
