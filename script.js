@@ -18,17 +18,18 @@ const chosephoto = document.getElementById('addphoto');
 const deletephoto = post.querySelector('.delete');
 const selecteddiv = document.querySelector('.selected');
 const postimg = document.querySelector('.onpostimg');
-// window.addEventListener('load', () => {
-//     setTimeout(() => {
-//         inputs.style.top = '20%';
-//     }, 2000)
-// });
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        inputs.style.top = '25%';
+        document.body.classList.add('.after');
+    }, 2000);
+});
 
 clos.addEventListener('click', () => {
     inputs.style.top = '-200px';
 });
 userimg.onclick = () => {
-    inputs.style.top = '20%';
+    inputs.style.top = '25%';
 }
 
 
