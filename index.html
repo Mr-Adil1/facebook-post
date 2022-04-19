@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="col col-2">
-                <input type="text" name="" id="" placeholder="Whats on your mind..">
+                <p id="dec">Whats on your mind?</p>
             </div>
             <div class="col col-3">
                 <i>
@@ -44,7 +44,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             </div>
             <div class="col col3">
-                <img src="about.jpg" alt="">
+                <img class="mypost" src="about.jpg" alt="">
             </div>
             <div class="col col4">
                 <div class="liks">
@@ -57,29 +57,27 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row-2">
-        <div class="col col1">
-            <div class="user-img">
-                <input id="userimg" type="image" src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg" alt="">
+        <div class="post-row-1">
+            <ion-icon name="close-outline" class="cansle"></ion-icon>
+            <div class="col col1">
+                <div class="user-img">
+                    <input id="userimg" type="image" src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg" alt="">
+                </div>
+                <p class="myname">name</p>
+                <div class="post">
+                    <button class="post-btn" onclick="postfunction()">Post</button>
+                </div>
             </div>
-            <p class="myname">name</p>
-        </div>
-        <div class="col col2">
-            <span id="desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-        </div>
-        <div class="col col3">
-            <img src="about.jpg" alt="">
-        </div>
-        <div class="col col4">
-            <div class="liks">
-                <button class="like">
-                    <ion-icon class="icon" name="thumbs-up-sharp"></ion-icon>
-                </button>
-                <button class="like msg">
-                    <ion-icon class="icon" name="chatbox-outline"></ion-icon>
-                </button>
+            <div class="col2">
+                <input type="text" name="" class="caption" placeholder="What's on your mind?">
+            </div>
+            <div class="col3">
+                <div class="selected">
+                    <ion-icon name="trash-outline" class="delete"></ion-icon>
+                    <img class="onpostimg" src="about.jpg" alt="">
+                </div>
+                <input type="file" name="" id="addphoto">
+                <label for="addphoto" class="addphoto"><ion-icon class="camra" name="camera-outline"></ion-icon> Photo</label>
             </div>
         </div>
     </div>
